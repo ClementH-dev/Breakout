@@ -8,7 +8,7 @@ size = Vector2(150, 8)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q70ct"]
 size = Vector2(150, 8)
 
-[node name="Paddle" type="CharacterBody2D" unique_id=860536516]
+[node name="Paddle" type="CharacterBody2D" unique_id=860536516 groups=["paddle"]]
 script = ExtResource("1_3xiby")
 metadata/_edit_group_ = true
 

@@ -44,7 +44,7 @@ Lancer la balle → la renvoyer avec la raquette → casser des briques →
 - [x] Déplacement de la raquette (gauche/droite), bloquée aux bords de l'arène
 - [ ] Balle lancée à l'appui sur Espace, vitesse constante
 - [ ] Rebond de la balle sur les murs et les briques (via la normale)
-- [ ] Rebond sur la raquette dépendant du point d'impact (angle modifié)
+- [x] Rebond sur la raquette dépendant du point d'impact (angle modifié)
 - [ ] Mur de briques généré au démarrage (grille fixe)
 - [ ] Une brique touchée est détruite et rapporte des points
 - [ ] 3 vies : une balle perdue retire une vie et replace la balle sur la raquette
