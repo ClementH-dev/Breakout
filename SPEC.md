@@ -3,7 +3,7 @@
 - **Version de la spec** : v1
 - **Date** : 03 novembre 2026 -> 06 novembre 2026
 - **Moteur / version** : Godot 4
-- **Durée cible** : 3 jours et demis
+- **Durée cible** : 4 jours
 
 ## 1. Pitch
 Le joueur contrôle une raquette en bas de l'écran et doit renvoyer une balle
