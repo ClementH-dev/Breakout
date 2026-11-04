@@ -14,7 +14,8 @@ func _physics_process(delta: float) -> void:
 			velocity = velocity.bounce(collision.get_normal())
 
 func _bounce_on_paddle(paddle: Node2D) -> void:
-	var half_width := 75 # Moitié de la taille de la raquête
+	var shape: RectangleShape2D = paddle.get_node("CollisionShape2D").shape
+	var half_width := shape.size.x / 2.0 # Moitié de la taille de la raquête
 	var offset := clampf((global_position.x - paddle.global_position.x) / half_width, -1.0, 1.0)
 	var angle := offset * MAX_BOUNCE_ANGLE
 	velocity = Vector2(sin(angle), -cos(angle)) * SPEED
