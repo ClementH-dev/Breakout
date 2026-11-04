@@ -114,13 +114,13 @@ Propriétaire : `Main` (variable `state` + `enum`).
 
 ```mermaid
 stateDiagram-v2
-    [*] --> READY
-    READY --> PLAYING: Espace (launch)
-    PLAYING --> READY: balle perdue, vies > 0
-    PLAYING --> GAME_OVER: balle perdue, vies = 0
-    PLAYING --> WON: toutes briques détruites
-    GAME_OVER --> READY: Espace (restart)
-    WON --> READY: Espace (restart)
+	[*] --> READY
+	READY --> PLAYING: Espace (launch)
+	PLAYING --> READY: balle perdue, vies > 0
+	PLAYING --> GAME_OVER: balle perdue, vies = 0
+	PLAYING --> WON: toutes briques détruites
+	GAME_OVER --> READY: Espace (restart)
+	WON --> READY: Espace (restart)
 ```
 
 
