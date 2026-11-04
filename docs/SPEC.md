@@ -40,8 +40,8 @@ Lancer la balle → la renvoyer avec la raquette → casser des briques →
 
 ## 4. Features versionnées
 ### v1 : MVP jouable (obligatoire)
-- [ ] Arène délimitée par des murs (gauche, droite, haut) ; le bas est ouvert
-- [ ] Déplacement de la raquette (gauche/droite), bloquée aux bords de l'arène
+- [x] Arène délimitée par des murs (gauche, droite, haut) ; le bas est ouvert
+- [x] Déplacement de la raquette (gauche/droite), bloquée aux bords de l'arène
 - [ ] Balle lancée à l'appui sur Espace, vitesse constante
 - [ ] Rebond de la balle sur les murs et les briques (via la normale)
 - [ ] Rebond sur la raquette dépendant du point d'impact (angle modifié)

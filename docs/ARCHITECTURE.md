@@ -56,6 +56,7 @@ Main (Node)
 |   ├── ScoreLabel
 |   ├── LivesLabel
 |   └── Message
+├── PaddlePosition
 └── Timers
 ```
 

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cx3y7h8sql26t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fhm1v"]
+size = Vector2(680, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kr4xq"]
+size = Vector2(20, 720)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2l3oa"]
+size = Vector2(20, 720)
+
+[node name="Arena" type="Node2D" unique_id=604564849]
+metadata/_edit_group_ = true
+
+[node name="Walls" type="StaticBody2D" parent="." unique_id=1398419660]
+
+[node name="TopShape" type="CollisionShape2D" parent="Walls" unique_id=677200488]
+position = Vector2(320, -10)
+shape = SubResource("RectangleShape2D_fhm1v")
+
+[node name="LeftShape" type="CollisionShape2D" parent="Walls" unique_id=993484877]
+position = Vector2(-10, 360)
+shape = SubResource("RectangleShape2D_kr4xq")
+
+[node name="RightShape" type="CollisionShape2D" parent="Walls" unique_id=1607614721]
+position = Vector2(650, 360)
+shape = SubResource("RectangleShape2D_2l3oa")

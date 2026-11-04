@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dqqdmismi0wka"]
+
+[ext_resource type="Script" uid="uid://cjviaekia140o" path="res://scripts/main.gd" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://b4yqt20fg36v4" path="res://scenes/paddle.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://cx3y7h8sql26t" path="res://scenes/arena.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://bwthlo64pi2gx" path="res://scenes/ball.tscn" id="4_jyhfs"]
+
+[node name="Main" type="Node" unique_id=380938384]
+script = ExtResource("1_0wfyh")
+
+[node name="Paddle" parent="." unique_id=860536516 instance=ExtResource("1_o5qli")]
+motion_mode = 1
+
+[node name="PaddlePosition" type="Marker2D" parent="." unique_id=1446110960]
+position = Vector2(320, 650)
+
+[node name="Arena" parent="." unique_id=604564849 instance=ExtResource("3_sugp2")]
+
+[node name="Ball" parent="." unique_id=147546095 instance=ExtResource("4_jyhfs")]
+
+[node name="BallPosition" type="Marker2D" parent="." unique_id=582114376]
+position = Vector2(320, 600)
