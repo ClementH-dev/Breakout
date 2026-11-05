@@ -4,7 +4,6 @@ signal all_bricks_destroyed
 @export var brick_scene: PackedScene
 @export var columns := 10
 @export var rows := 5
-@export var brick_size := Vector2(60, 20)
 @export var spacing := Vector2(0,0)
 
 var bricks_left := 0
@@ -14,6 +13,10 @@ func _ready() -> void:
 	pass
 
 func build_wall() -> void:
+	var sample = brick_scene.instantiate()
+	var brick_size: Vector2 = sample.get_size()
+	sample.free()
+	
 	var total_width := columns * brick_size.x + (columns - 1) * spacing.x
 	var offset_x := -total_width / 2.0 + brick_size.x / 2.0
 	
