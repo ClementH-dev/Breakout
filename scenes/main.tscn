@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://b4yqt20fg36v4" path="res://scenes/paddle.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://cx3y7h8sql26t" path="res://scenes/arena.tscn" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://bwthlo64pi2gx" path="res://scenes/ball.tscn" id="4_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://l0fadtbgnrgo" path="res://scenes/brick_wall.tscn" id="5_tbgi4"]
 
 [node name="Main" type="Node" unique_id=380938384]
 script = ExtResource("1_0wfyh")
@@ -20,3 +21,8 @@ position = Vector2(320, 650)
 
 [node name="BallPosition" type="Marker2D" parent="." unique_id=582114376]
 position = Vector2(320, 600)
+
+[node name="BrickWall" parent="." unique_id=1042498819 instance=ExtResource("5_tbgi4")]
+
+[node name="WallPosition" type="Marker2D" parent="." unique_id=1744103152]
+position = Vector2(320, 50)

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://l0fadtbgnrgo"]
+
+[ext_resource type="Script" uid="uid://b8c4ce40kuc0v" path="res://scripts/brick_wall.gd" id="1_yqhud"]
+[ext_resource type="PackedScene" uid="uid://be6m7brci0ic2" path="res://scenes/brick.tscn" id="2_is8a7"]
+
+[node name="BrickWall" type="Node2D" unique_id=1042498819]
+script = ExtResource("1_yqhud")
+brick_scene = ExtResource("2_is8a7")

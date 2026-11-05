@@ -5,6 +5,7 @@ extends Node
 func _ready() -> void:
 	$Paddle.start($PaddlePosition.position)
 	$Ball.init($BallPosition.position)
+	$BrickWall.init($WallPosition.position)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

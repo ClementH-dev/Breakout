@@ -8,7 +8,10 @@ func _physics_process(delta: float) -> void:
 	var collision := move_and_collide(velocity * delta)
 	if collision:
 		var collider := collision.get_collider()
-		if collider.is_in_group("paddle"):
+		if collider.is_in_group("bricks"):
+			collider.hit()
+			velocity = velocity.bounce(collision.get_normal())
+		elif collider.is_in_group("paddle"):
 			_bounce_on_paddle(collider)
 		else:
 			velocity = velocity.bounce(collision.get_normal())
