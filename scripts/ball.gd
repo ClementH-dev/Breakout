@@ -1,10 +1,15 @@
 extends CharacterBody2D
 
-
+var launched := false
 const SPEED := 350.0
 const MAX_BOUNCE_ANGLE := deg_to_rad(60.0) # Degré max de rebond
 
 func _physics_process(delta: float) -> void:
+	if not launched:
+		if Input.is_action_just_pressed("launch"):
+			launch()
+		return 
+		
 	var collision := move_and_collide(velocity * delta)
 	if collision:
 		var collider := collision.get_collider()
@@ -25,4 +30,9 @@ func _bounce_on_paddle(paddle: Node2D) -> void:
 	
 func init(pos: Vector2) -> void:
 	position = pos
-	velocity = Vector2 (1, -1).normalized() * SPEED
+	velocity = Vector2.ZERO
+	launched = false
+	
+func launch() -> void:
+	launched = true
+	velocity = Vector2(1, -1).normalized() * SPEED
