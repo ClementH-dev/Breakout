@@ -1,5 +1,6 @@
 extends Node2D
 signal all_bricks_destroyed
+signal brick_destroyed
 
 @export var brick_scene: PackedScene
 @export var columns := 10
@@ -33,6 +34,7 @@ func build_wall() -> void:
 
 func _on_brick_destroyed() -> void:
 	bricks_left -= 1
+	brick_destroyed.emit()
 	if bricks_left == 0:
 		all_bricks_destroyed.emit()
 
